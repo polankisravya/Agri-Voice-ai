@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "AgriVoice AI",
+    "slug": "agrivoice-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#040d06",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#040d06"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.agrivoice.ai",
+      "buildNumber": "1"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#040d06"
+      },
+      "package": "com.agrivoice.ai",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "web": {
+      "favicon": "./assets/logo.png",
+      "bundler": "metro",
+      "name": "AgriVoice AI",
+      "shortName": "AgriVoice",
+      "description": "AI-powered crop disease detection for Indian farmers",
+      "themeColor": "#040d06",
+      "backgroundColor": "#040d06"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow AgriVoice AI to access your camera to scan crop leaves for disease detection."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow AgriVoice AI to access your photos to select crop leaf images."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8001528d-573b-4835-b870-953ca7cbfbf1"
+      }
+    },
+    "owner": "p.sravya"
+  }
+}
